@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     color: #F8FAFC;
     padding: 20px;
-    background: /*linear-gradient( 135deg, rgba(2, 6, 23, 0.70),  rgba(30, 27, 75, 0.60),   rgba(49, 46, 129, 0.50) ),*/
+    background: linear-gradient( 135deg, rgba(2, 6, 23, 0.70),  rgba(30, 27, 75, 0.60),   rgba(49, 46, 129, 0.50) ),
         url("../images/background.jpg") center center / cover no-repeat fixed;
 }
 h1 {
