@@ -1,0 +1,85 @@
+<html>
+<head>
+   
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <script src="../java/script.js"></script>
+     <div id="notification" class="notification">
+    <span id="notificationMessage"></span>
+</div>
+<h1>Student Registration</h1>
+<hr>
+
+<form>
+    <h2>Student Information</h2>
+    <label>Full Name:</label>
+    <input type="text" id="name" placeholder="Enter Your Name:">
+    <br><br>
+
+    <label>Student ID:</label>
+    <input type="text" id="student" placeholder="Enter ID No:">
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" id="date" >
+    <br><br>
+  <div class="gender">
+
+    <span class="gender-title">Gender</span>
+
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+
+</div>
+    <hr>
+    <h2>Contact Information</h2>
+    <label>Mobile Number:</label>
+    <input type="text" id="mobile" placeholder="Enter Your Mobile No:">
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" id="college" placeholder="Enter Your personal Email Id:">
+    <br><br>
+
+    <label>Address:</label>
+    <textarea rows="4" cols="30" id="add" placeholder="Enter Your Current Address:"></textarea>
+    <hr>
+    <h2>Academic Information</h2>
+    <label>Course:</label>
+    <select id="course" >
+        <option>Computer Engineering</option>
+        <option>Information Technology</option>
+        <option>Mechanical Engineering</option>
+    </select>
+    <br><br>
+
+    <label>Year:</label>
+    <select id="year">
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+        <option>Fourth Year</option>
+    </select>
+    <br><br>
+
+    <label>Division:</label>
+    <input type="text" id="divison" placeholder="Enter Your Division Like(3CE1):">
+    <br><br>
+    <input type="submit" onclick=" return register()" value="Register">
+    <input type="reset" onclick="return clearForm()" value="Clear">
+</form>
+<br>
+<button ><a href="dashboard.html">Back to Dashboard</a></button>
+<footer >
+
+        <p>@2026 StudentHub Portal</p>
+
+    </footer>
+</body>
+</html>
