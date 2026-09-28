@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>StudentHub Data Portal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<header>
+
+    <div style="display: flex; gap: 10px; align-items: center;">
+
+        <!-- Dark / Light Theme -->
+        <button class="theme-toggle"
+                onclick="toggleTheme()"
+                id="themeButton"
+                title="Toggle Dark/Light Mode">
+            🌙
+        </button>
+
+        <!-- Hamburger Menu -->
+        <button class="menu-toggle"
+                onclick="toggleMenu()"
+                id="menuButton">
+            ☰
+        </button>
+
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="data-portal.html">Data Portal</a>
+        <a href="registration.html">Registration</a>
+        <a href="attendance.html">Check Attendance</a>
+        <a href="assignment.html">Assignment</a>
+        <a href="course.html">Course Info</a>
+        <a href="result.html">Result</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- Main Data Portal -->
+
+<main class="header">
+
+    <h1>StudentHub Data Portal</h1>
+
+    <h2>Events, Students, Notices and FAQs</h2>
+
+    <p>
+        View information dynamically using Fetch API.
+    </p>
+
+
+    <!-- Data Type Selection -->
+    <div class="data-controls">
+        <label for="dataType">
+            Select Data:
+        </label>
+        <select id="dataType" onchange="loadSelectedData()">
+            <option value="events">Events</option>
+            <option value="students">Students</option>
+            <option value="notices">Notices</option>
+            <option value="faqs">FAQs</option>
+        </select>
+
+        <!-- Search -->
+        <label for="searchBox">
+            Search:
+        </label>
+
+        <input type="text"
+               id="searchBox"
+               placeholder="Search data..."
+               onkeyup="filterData()">
+
+        <!-- Sorting -->
+        <label for="sortOrder">
+            Sort:
+        </label>
+        <select id="sortOrder" onchange="sortData()">
+            <option value="asc">
+                A to Z
+            </option>
+            <option value="desc">
+                Z to A
+            </option>
+        </select>
+    </div>
+    <!-- Dynamic Data -->
+    <div id="dataList">
+        <p>
+            Loading data...
+        </p>
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination">
+    </div>
+</main>
+
+
+<!-- Notification -->
+<div id="notification">
+    <span id="notificationMessage"></span>
+</div>
+<footer>
+    <p>@2026 StudentHub Portal</p>
+</footer>
+
+<!-- JavaScript -->
+<script src="../java/script.js"></script>
+</body>
+</html>
