@@ -1,0 +1,166 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Campus Tech Expo",
+      "date": "2026-10-03",
+      "category": "Workshop",
+      "location": "Main Auditorium",
+      "description": "A student innovation showcase featuring robotics, AI demos, and startup panels."
+    },
+    {
+      "id": 2,
+      "title": "Career Guidance Seminar",
+      "date": "2026-10-12",
+      "category": "Career",
+      "location": "Seminar Hall B",
+      "description": "Industry leaders will explain internship pathways, employability skills, and interview preparation."
+    },
+    {
+      "id": 3,
+      "title": "Cultural Fest Night",
+      "date": "2026-10-18",
+      "category": "Cultural",
+      "location": "Open Stage",
+      "description": "A music, dance, and drama evening with student performances from all departments."
+    },
+    {
+      "id": 4,
+      "title": "Research Poster Session",
+      "date": "2026-10-25",
+      "category": "Academic",
+      "location": "Innovation Lab",
+      "description": "Undergraduate researchers will present posters on AI, sustainability, and engineering projects."
+    },
+    {
+      "id": 5,
+      "title": "Sports Championship",
+      "date": "2026-11-02",
+      "category": "Sports",
+      "location": "College Ground",
+      "description": "Interdepartmental tournament featuring cricket, football, and athletics."
+    }
+  ],
+  "students": [
+    {
+      "id": "STU101",
+      "name": "Niket Patel",
+      "course": "Computer Engineering",
+      "year": "Second Year",
+      "batch": "COE-A",
+      "email": "niket.patel@college.edu",
+      "status": "Active"
+    },
+    {
+      "id": "STU104",
+      "name": "Ananya Sharma",
+      "course": "Information Technology",
+      "year": "First Year",
+      "batch": "IT-B",
+      "email": "ananya.sharma@college.edu",
+      "status": "Active"
+    },
+    {
+      "id": "STU112",
+      "name": "Rohan Mehta",
+      "course": "Mechanical Engineering",
+      "year": "Third Year",
+      "batch": "MEC-C",
+      "email": "rohan.mehta@college.edu",
+      "status": "On Leave"
+    },
+    {
+      "id": "STU120",
+      "name": "Sana Khan",
+      "course": "Electronics Engineering",
+      "year": "Second Year",
+      "batch": "ECE-A",
+      "email": "sana.khan@college.edu",
+      "status": "Active"
+    },
+    {
+      "id": "STU130",
+      "name": "Dev Joshi",
+      "course": "Civil Engineering",
+      "year": "Final Year",
+      "batch": "CIV-D",
+      "email": "dev.joshi@college.edu",
+      "status": "Active"
+    }
+  ],
+  "notices": [
+    {
+      "id": 1,
+      "title": "Mid-Semester Exam Schedule",
+      "date": "2026-09-25",
+      "category": "Academic",
+      "priority": "High",
+      "description": "The mid-semester exams for semesters 3 and 5 will begin from 25 September. Please bring your hall ticket."
+    },
+    {
+      "id": 2,
+      "title": "Library Hours Extended",
+      "date": "2026-09-28",
+      "category": "Campus",
+      "priority": "Medium",
+      "description": "The central library will remain open until 9:00 PM during revision week for student access."
+    },
+    {
+      "id": 3,
+      "title": "Fee Payment Deadline",
+      "date": "2026-10-02",
+      "category": "Finance",
+      "priority": "High",
+      "description": "Students who have not paid the tuition fees must complete the payment before 2 October to avoid late charges."
+    },
+    {
+      "id": 4,
+      "title": "Workshop Registration Open",
+      "date": "2026-10-05",
+      "category": "Events",
+      "priority": "Medium",
+      "description": "Registration for the career guidance and leadership workshops is now open for all departments."
+    },
+    {
+      "id": 5,
+      "title": "Hostel Maintenance Notice",
+      "date": "2026-10-10",
+      "category": "Campus",
+      "priority": "Low",
+      "description": "Water and sanitation checks will be conducted on 10 October. Residents are advised to cooperate."
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "question": "How can I access my attendance records?",
+      "answer": "Log in to the student portal and navigate to the attendance section. Your daily and monthly attendance will appear there.",
+      "category": "Academic"
+    },
+    {
+      "id": 2,
+      "question": "What is the deadline for assignment submission?",
+      "answer": "Every assignment has a due date listed in the assignment page. Students must upload before the final submission time.",
+      "category": "Assignments"
+    },
+    {
+      "id": 3,
+      "question": "Can I update my personal details after admission?",
+      "answer": "Yes, you can request changes through the profile section or contact the academic office for verification.",
+      "category": "Profile"
+    },
+    {
+      "id": 4,
+      "question": "How do I download my semester result?",
+      "answer": "Open the result page, enter the required details, and select the result option to see or download marks.",
+      "category": "Results"
+    },
+    {
+      "id": 5,
+      "question": "What should I do if I miss a class?",
+      "answer": "You should contact the faculty and review the missed notes. A short leave note is required for long absences.",
+      "category": "Attendance"
+    }
+  ]
+}
+
