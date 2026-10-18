@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create a StudentHub Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Create a StudentHub Login</h1>
+    <hr>
+    <form action="../php/create_account.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="3" maxlength="30" pattern="[A-Za-z0-9_]{3,30}" autocomplete="username" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" maxlength="254" autocomplete="email" required>
+        <br><br>
+
+        <label for="password">Password (12-72 bytes):</label>
+        <input type="password" id="password" name="password" minlength="12" maxlength="72" autocomplete="new-password" required>
+        <br><br>
+
+        <label for="confirm_password">Confirm password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" minlength="12" maxlength="72" autocomplete="new-password" required>
+        <br><br>
+
+        <input type="hidden" name="csrf_token" id="csrf_token">
+        <button type="submit">Create Login</button>
+    </form>
+    <p><a href="login.html">Back to login</a></p>
+    <script>
+        fetch("../php/account_form_token.php", { credentials: "same-origin" })
+            .then(response => {
+                if (!response.ok) throw new Error("Unable to prepare account form.");
+                return response.json();
+            })
+            .then(data => {
+                document.getElementById("csrf_token").value = data.token;
+            })
+            .catch(() => {
+                document.querySelector("button[type=submit]").disabled = true;
+                const message = document.createElement("p");
+                message.textContent = "Unable to load the secure form. Refresh the page to try again.";
+                document.querySelector("form").prepend(message);
+            });
+    </script>
+</body>
+</html>
