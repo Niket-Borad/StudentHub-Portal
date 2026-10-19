@@ -1,0 +1,189 @@
+/* Basic page style */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #15152f;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+    padding-bottom: 15px;
+}
+
+.header h1,
+.intro h2,
+.card h2 {
+    color: #55ddee;
+}
+
+.header h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.intro {
+    margin: 25px 0;
+}
+
+.card {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background: #22223f;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    color: white;
+    background: #15152f;
+}
+
+.filters input {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+label input,
+label select {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.purple {
+    background: #7448d8;
+}
+
+.cyan {
+    color: #111;
+    background: #55ddee;
+}
+
+.gray {
+    background: #666;
+}
+
+.red {
+    background: #c43b50;
+}
+
+.small {
+    padding: 7px 10px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #555;
+}
+
+th {
+    color: #55ddee;
+}
+
+tbody tr:hover {
+    background: #303050;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.empty {
+    padding: 24px;
+    text-align: center;
+}
+
+.count {
+    color: #ccc;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.success {
+    color: #d5ffdc;
+    background: #24613b;
+}
+
+.error {
+    color: #ffd5d5;
+    background: #762d3b;
+}
+
+.form-card {
+    max-width: 550px;
+    margin: 30px auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        gap: 10px;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}

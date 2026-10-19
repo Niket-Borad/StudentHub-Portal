@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS studenthub
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE studenthub;
+
+CREATE TABLE IF NOT EXISTS students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  mobile VARCHAR(15) NOT NULL,
+  course VARCHAR(50) NOT NULL,
+  year INT NOT NULL
+);
